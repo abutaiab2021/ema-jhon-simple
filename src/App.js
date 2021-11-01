@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import Inventory from './components/Inventory/Inventory';
 import NotFound from './components/NotFound/NotFound';
 import OrderReview from './components/OrderReview/OrderReview';
+import Orders from './components/Orders/Orders';
 import PlaceOrder from './components/PlaceOrder/PlaceOrder';
 import Shop from './components/Shop/Shop';
 import AuthProvider from './context/AuthProvider';
@@ -33,6 +34,9 @@ function App() {
           </PrivateRoute>
           <PrivateRoute path="/shipping">
             <Shipping></Shipping>
+          </PrivateRoute>
+          <PrivateRoute path="/orders">
+            <Orders></Orders>
           </PrivateRoute>
           <PrivateRoute path="/placeorder">
             <PlaceOrder></PlaceOrder>
